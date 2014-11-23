@@ -7,7 +7,6 @@ You need to edit DNS
 
 ```DNS -> * A ip_address```
 
-
 ####Generate .conf
 
 for Apache 2.2
@@ -15,7 +14,6 @@ for Apache 2.2
 ```
 sh gen-conf.sh PROJECT_NAME PROJECT_DOMAIN
 ```
-
 then, move to /etc/httpd/conf.d/ or else.
 
 ####Generate user & dev-directories
