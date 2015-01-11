@@ -4,8 +4,8 @@ if id -u $1 >/dev/null 2>&1; then
     echo "user exists"
 else
     echo "create user"
-	useradd $2 -G wheel
-	echo password | passwd $2 --stdin
+	useradd $1 -G wheel
+	echo password | passwd $1 --stdin
 fi
 
 echo "create directories"
