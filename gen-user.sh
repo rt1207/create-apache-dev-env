@@ -1,4 +1,7 @@
 #!/bin/sh
+#
+# sh gen-user.sh USERNAME PROJECTNAME
+#
 
 if id -u $1 >/dev/null 2>&1; then
     echo "user exists"
@@ -14,4 +17,5 @@ chmod 755 -R /var/www/vhosts
 mkdir -p /var/www/vhosts/production/$1
 mkdir -p /var/www/vhosts/staging/$1
 mkdir -p /var/www/vhosts/dev/$2/$1
-[ -f /var/www/vhosts/dev/$2/$1/index.html ] && echo 'index.html exists' || echo 'Hello World!' > /var/www/vhosts/dev/$2/$1/index.html
+chmod 777 -R /var/www/vhosts/dev
+[ -f /var/www/vhosts/dev/$1/$2/index.html ] && echo 'index.html exists' || echo 'Hello World!' > /var/www/vhosts/dev/$1/$2/index.html
