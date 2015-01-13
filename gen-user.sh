@@ -14,8 +14,8 @@ fi
 echo "create directories"
 mkdir /var/www/vhosts
 chmod 755 -R /var/www/vhosts
-mkdir -p /var/www/vhosts/production/$1
-mkdir -p /var/www/vhosts/staging/$1
-mkdir -p /var/www/vhosts/dev/$2/$1
+mkdir -p /var/www/vhosts/production/$2
+mkdir -p /var/www/vhosts/staging/$2
+mkdir -p /var/www/vhosts/dev/$1/$2
 chmod 777 -R /var/www/vhosts/dev
 [ -f /var/www/vhosts/dev/$1/$2/index.html ] && echo 'index.html exists' || echo 'Hello World!' > /var/www/vhosts/dev/$1/$2/index.html
