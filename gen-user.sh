@@ -12,7 +12,7 @@ else
 fi
 
 echo "create directories"
-mkdir /var/www/vhosts
+mkdir -p /var/www/vhosts
 chmod 755 -R /var/www/vhosts
 mkdir -p /var/www/vhosts/production/$2
 mkdir -p /var/www/vhosts/staging/$2
