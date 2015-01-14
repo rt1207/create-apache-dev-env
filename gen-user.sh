@@ -17,9 +17,8 @@ chmod 700 ~/.ssh
 touch ~/.ssh/authorized_keys
 
 mkdir -p /var/www/vhosts
-chmod 777 -R /var/www/vhosts
-mkdir -p /var/www/vhosts/production/$2
-mkdir -p /var/www/vhosts/staging/$2
+mkdir -p /var/www/vhosts/production/current
+mkdir -p /var/www/vhosts/staging/current
 mkdir -p /var/www/vhosts/dev/$1/$2
-chmod 777 -R /var/www/vhosts/dev
+chmod 777 -R /var/www/vhosts/
 [ -f /var/www/vhosts/dev/$1/$2/index.html ] && echo 'index.html exists' || echo 'Hello World!' > /var/www/vhosts/dev/$1/$2/index.html
