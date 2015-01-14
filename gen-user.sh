@@ -17,7 +17,7 @@ chmod 700 ~/.ssh
 touch ~/.ssh/authorized_keys
 
 mkdir -p /var/www/vhosts
-chmod 755 -R /var/www/vhosts
+chmod 777 -R /var/www/vhosts
 mkdir -p /var/www/vhosts/production/$2
 mkdir -p /var/www/vhosts/staging/$2
 mkdir -p /var/www/vhosts/dev/$1/$2
