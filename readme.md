@@ -19,5 +19,5 @@ then, move to /etc/httpd/conf.d/ or else.
 ####Generate user & dev-directories
 This generates user-account with password & dev-directory under /var/www/vhosts
 ```
-sh gen-user.sh PROJECT_NAME USER_NAME
+sh gen-user.sh USER_NAME PROJECT_NAME
 ```
